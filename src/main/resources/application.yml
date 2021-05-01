@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /kripto/
+  tomcat:
+    threads:
+      max: 5
+
+bscscan:
+  baseurl: https://api.bscscan.com/api?module=account&action=
+  apikey: WSHH4B7JDPZWU23ACT9T12IYXGYIHF7HM4
+
+spring:
+  application:
+    name: walletfollow
+#  banner:
+#    location: banner.txt
+  jackson:
+    default-property-inclusion: non_null
+    #    date-format: dd/MM/yyyy HH:mm:ss
+    time-zone: GMT+3
