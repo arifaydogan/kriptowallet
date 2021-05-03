@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public enum BscScanServiceEnum {
 
-    GET_BNB_BALANCE("balance&address=");
-
-    private String url;
+    GET_BNB_BALANCE("account&action=","balance&address="),
+    GET_BNB_PRICE("stats&action=","bnbprice");
+    private String baseUrl;
+    private String serviceUrl;
 }

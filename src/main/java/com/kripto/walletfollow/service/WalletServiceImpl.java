@@ -4,6 +4,7 @@ import com.kripto.walletfollow.dto.response.Wallet;
 import com.kripto.walletfollow.external.BscScanExternalService;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,9 @@ public class WalletServiceImpl implements WalletService {
     @Value("${bscscan.apikey}")
     private String API_KEY;
 
+    @Autowired
+    BscScanExternalService service;
+
     @Override
     public Wallet findWallet(String walletHashCode) throws IOException, URISyntaxException {
 
@@ -30,9 +34,7 @@ public class WalletServiceImpl implements WalletService {
 //
 //        return null;
 
-        BscScanExternalService service = new BscScanExternalService(EXTERNAL_URL,API_KEY);
         String s = service.getBNBBalanceByAdress("0x6Ab381b04d86226a20C77b961422FD6FDf6DED4b");
-        System.out.println(s);
         return null;
     }
 }

@@ -7,7 +7,7 @@ server:
       max: 5
 
 bscscan:
-  baseurl: https://api.bscscan.com/api?module=account&action=
+  baseurl: https://api.bscscan.com/api?module=
   apikey: WSHH4B7JDPZWU23ACT9T12IYXGYIHF7HM4
 
 spring:
