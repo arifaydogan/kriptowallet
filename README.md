@@ -1,6 +1,5 @@
 
 # KriptoWallet
-
 The purpose of this project is to return the information of the wallets whose hash code is given in the smart chain(Bscscan) browser and to send an alert in case of transactions in those wallets.
 
 
