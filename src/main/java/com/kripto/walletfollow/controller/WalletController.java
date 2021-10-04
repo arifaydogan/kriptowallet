@@ -20,7 +20,7 @@ public class WalletController {
     WalletService serviceWallet;
 
 
-    @RequestMapping(path = "/testme", method = RequestMethod.POST)
+    @RequestMapping(path = "/find", method = RequestMethod.POST)
     Wallet findWallet(@RequestBody WalletReq walletReq) throws IOException, URISyntaxException {
         return serviceWallet.findWallet(walletReq.getWalletHashCode());
     }
