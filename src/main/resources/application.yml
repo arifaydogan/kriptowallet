@@ -8,7 +8,7 @@ server:
 
 bscscan:
   baseurl: https://api.bscscan.com/api?module=
-  apikey: WSHH4B7JDPZWU23ACT9T12IYXGYIHF7HM4
+  apikey: ******************************
 
 spring:
   application:
